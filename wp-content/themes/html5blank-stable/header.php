@@ -38,6 +38,7 @@
 							<img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="Logo" class="logo-img">
 						</a>
 					</div>
+					<h2><?php bloginfo('description'); ?></h2>
 					<!-- /logo -->
 
 					<!-- nav -->

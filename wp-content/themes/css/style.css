@@ -355,18 +355,6 @@ th {
   padding: 0; }
 
 /*------------------------------------*\
-    COLORS
-\*------------------------------------*/
-/*------------------------------------*\
-TYPOGRAPHY
-\*------------------------------------*/
-@font-face {
-  font-family: 'CaviarDreamsBold';
-  src: url("fonts/Caviar_Dreams_Bold-webfont.eot");
-  src: url("fonts/Caviar_Dreams_Bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/Caviar_Dreams_Bold-webfont.woff") format("woff"), url("fonts/Caviar_Dreams_Bold-webfont.ttf") format("truetype"), url("fonts/Caviar_Dreams_Bold-webfont.svg#CaviarDreamsBold") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-/*------------------------------------*\
     MAIN
 \*------------------------------------*/
 /* global box-sizing */
@@ -381,12 +369,11 @@ TYPOGRAPHY
 
 /* html element 62.5% font-size for REM use */
 html {
-  font-size: 62.5%;
-  background-color: #F16522; }
+  font-size: 62.5%; }
 
 body {
-  font: 300 16px/1.4 'CaviarDreamsBold', Helvetica, Arial, sans-serif;
-  color: white; }
+  font: 300 11px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #444; }
 
 /* clear */
 .clear:before,
@@ -405,8 +392,8 @@ img {
   vertical-align: bottom; }
 
 a {
-  color: white;
-  text-decoration: underline; }
+  color: #444;
+  text-decoration: none; }
 
 a:hover {
   color: #444; }
@@ -420,7 +407,7 @@ a:active {
 
 input:focus {
   outline: 0;
-  border: 1px solid #F16522; }
+  border: 1px solid #04A4CC; }
 
 /*------------------------------------*\
     STRUCTURE
@@ -429,66 +416,50 @@ input:focus {
 .wrapper {
   max-width: 1280px;
   width: 95%;
-  margin: 10px auto;
+  margin: 0 auto;
   position: relative; }
 
 /* header */
 .header {
-  width: 33%;
-  float: left; }
-
-.page-content {
-  width: 60%;
-  margin-left: 2%;
-  padding-left: 2%;
-  float: left; }
+  border: thin solid red; }
 
 /* logo */
 /* nav */
-.nav a {
-  text-decoration: none; }
-.nav ul {
-  padding: 0; }
-  .nav ul li {
-    border: thin dotted white;
-    padding: 7px 0;
-    margin: 5px 0;
-    list-style: none;
-    text-align: center; }
-
 /* sidebar */
 /* footer */
-.footer {
-  clear: both; }
-
+/*------------------------------------*\
+    PAGES
+\*------------------------------------*/
+/*------------------------------------*\
+    IMAGES
+\*------------------------------------*/
+/*------------------------------------*\
+	TYPOGRAPHY
+\*------------------------------------*/
+@font-face {
+  font-family: 'Font-Name';
+  src: url("fonts/font-name.eot");
+  src: url("fonts/font-name.eot?#iefix") format("embedded-opentype"), url("fonts/font-name.woff") format("woff"), url("fonts/font-name.ttf") format("truetype"), url("fonts/font-name.svg#font-name") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 /*------------------------------------*\
     RESPONSIVE
 \*------------------------------------*/
-@media only screen and (max-width: 768px) {
-  .header {
-    width: 100%;
-    clear: both; }
-
-  .page-content {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    clear: both; } }
 /*------------------------------------*\
     MISC
 \*------------------------------------*/
 ::selection {
-  background: #1B75BB;
+  background: #04A4CC;
   color: #FFF;
   text-shadow: none; }
 
 ::-webkit-selection {
-  background: #1B75BB;
+  background: #04A4CC;
   color: #FFF;
   text-shadow: none; }
 
 ::-moz-selection {
-  background: #blue;
+  background: #04A4CC;
   color: #FFF;
   text-shadow: none; }
 
