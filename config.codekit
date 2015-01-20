@@ -4383,11 +4383,22 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/wp-content\/themes\/html5blank-stable\/img\/icons\/favicon.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2178,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/html5blank-stable\/img\/icons\/favicon.png",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/html5blank-stable\/img\/icons\/favicon.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/wp-content\/themes\/html5blank-stable\/img\/icons\/touch.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 15472,
+		"initialSize": 3332,
 		"inputAbbreviatedPath": "\/wp-content\/themes\/html5blank-stable\/img\/icons\/touch.png",
 		"outputAbbreviatedPath": "\/wp-content\/themes\/html5blank-stable\/img\/icons\/touch.png",
 		"outputPathIsOutsideProject": 0,
