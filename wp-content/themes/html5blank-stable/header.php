@@ -28,9 +28,9 @@
 
 		<!-- wrapper -->
 		<div class="wrapper">
-			<!-- header -->
+			<!-- header -->			
+			<a id="simple-menu" href="#sidr" class="desktophide"><i class="fa fa-bars fa-2x"></i></a>
 			<header class="header clear" role="banner">
-			<a id="simple-menu" href="#sidr" class="desktophide"><i class="fa fa-bars fa-lg"></i></a>
 					<!-- logo -->
 					<div class="logo">
 						<a href="<?php echo home_url(); ?>">
@@ -41,14 +41,17 @@
 					<h2 class="tagline"><?php bloginfo('description'); ?></h2>
 					<!-- /logo -->
 
-<div id="sidr">
+<div id="sidr-right">
   <!-- Your content -->
   <?php html5blank_nav(); ?>
 </div>
 
 <script>
 $(document).ready(function() {
-  $('#simple-menu').sidr();
+  $('#simple-menu').sidr({
+	  name: 'sidr-right',
+	  side: 'right'
+	});
 });
 </script>
 

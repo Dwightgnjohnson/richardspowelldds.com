@@ -2336,6 +2336,9 @@ input:focus {
   background-color: #1B75BB;
   color: #FFF; }
 
+#simple-menu {
+  float: right; }
+
 /* sidebar */
 /* footer */
 .footer {

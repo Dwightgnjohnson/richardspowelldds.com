@@ -157,6 +157,9 @@ input:focus {
 	background-color: $blue;
 	color: #FFF;
 }
+#simple-menu {
+	float:right;
+}
 
 /* sidebar */
 .sidebar {}
@@ -175,7 +178,7 @@ input:focus {
 
 }
 @media only screen and (max-width:480px) {
-		.tagline {
+	.tagline {
 		font-size:1em;
 	}
 }
