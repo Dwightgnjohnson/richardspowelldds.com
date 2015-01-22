@@ -30,7 +30,7 @@
 		<div class="wrapper">
 			<!-- header -->
 			<header class="header clear" role="banner">
-
+			<a id="simple-menu" href="#sidr" class="desktophide"><i class="fa fa-bars fa-lg"></i></a>
 					<!-- logo -->
 					<div class="logo">
 						<a href="<?php echo home_url(); ?>">
@@ -38,10 +38,8 @@
 							<img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Logo" class="logo-img">
 						</a>
 					</div>
-					<h2><?php bloginfo('description'); ?></h2>
+					<h2 class="tagline"><?php bloginfo('description'); ?></h2>
 					<!-- /logo -->
-
-<a id="simple-menu" href="#sidr"><i class="fa fa-bars"></i></a>
 
 <div id="sidr">
   <!-- Your content -->
@@ -55,13 +53,10 @@ $(document).ready(function() {
 </script>
 
 
-
-
-
 					<!-- nav -->
 					<nav class="nav" role="navigation">
 						
-						<div id="navcontainer">
+						<div id="navcontainer" class="mobilehide">
 							<?php html5blank_nav(); ?>
 						</div>
 					</nav>
