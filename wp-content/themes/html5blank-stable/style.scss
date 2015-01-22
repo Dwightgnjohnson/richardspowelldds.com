@@ -1,4 +1,20 @@
+/*
+	Theme Name: Richard S Powell DDS
+	Theme URI: http://richardspowelldds.com
+	Description: A theme for healthy smiles
+	Version: 1.4.3
+	Author: Dwight GN Johnson (@dwightgnjohnson)
+	Author URI: http://dwightgnjohnson.com
+	Tags: HTML5, CSS3, JS
+
+	License: MIT
+	License URI: http://opensource.org/licenses/mit-license.php
+*/
+
+
+
 @import "normalize";
+@import "jquery.sidr.dark";
 
 /*------------------------------------*\
     COLORS
@@ -7,6 +23,7 @@
 $orange: #F16522;
 $blue: #1B75BB;
 $green: #27855E;
+$white: white;
 
 /*------------------------------------*\
 TYPOGRAPHY
@@ -91,7 +108,7 @@ input:focus {
 /* wrapper */
 .wrapper {
 	max-width:1280px;
-	width:95%;
+	width:90%;
 	margin:10px auto;
 	position:relative;
 }
@@ -116,25 +133,33 @@ input:focus {
 
 
 /* nav */
-.nav {
-	a {
-		text-decoration:none;
-	}
-	ul {
-		padding:0;
-		li {
-			border: thin dotted white;
-			padding: 7px 0;
-			margin: 5px 0;
-			list-style: none;
-			text-align:center;
-		}
-	}
+#navcontainer ul {
+				margin: 0;
+				padding: 0;
+				list-style-type: none;
+				li { 
+					margin: 0 0 .2em 0; 
+					text-align:center;
+					}
+				}
+
+#navcontainer a {
+	display: block;
+	color: #FFF;
+	background-color: $orange;
+	border: thin solid $white;
+	padding: .2em .8em;
+	text-decoration: none;
 }
+
+#navcontainer a:hover {
+	background-color: $blue;
+	color: #FFF;
+}
+
 /* sidebar */
-.sidebar {
-	
-}
+.sidebar {}
+
 /* footer */
 .footer {
 	clear:both;

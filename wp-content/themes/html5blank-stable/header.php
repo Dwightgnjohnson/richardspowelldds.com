@@ -5,6 +5,7 @@
 		<title><?php wp_title(''); ?><?php if(wp_title('', false)) { echo ' :'; } ?> <?php bloginfo('name'); ?></title>
 
 		<link href="//www.google-analytics.com" rel="dns-prefetch">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <link href="<?php echo get_template_directory_uri(); ?>/img/icons/favicon.ico" rel="shortcut icon">
         <link href="<?php echo get_template_directory_uri(); ?>/img/icons/touch.png" rel="apple-touch-icon-precomposed">
 
@@ -27,7 +28,6 @@
 
 		<!-- wrapper -->
 		<div class="wrapper">
-
 			<!-- header -->
 			<header class="header clear" role="banner">
 
@@ -35,15 +35,35 @@
 					<div class="logo">
 						<a href="<?php echo home_url(); ?>">
 							<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
-							<img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="Logo" class="logo-img">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Logo" class="logo-img">
 						</a>
 					</div>
 					<h2><?php bloginfo('description'); ?></h2>
 					<!-- /logo -->
 
+<a id="simple-menu" href="#sidr"><i class="fa fa-bars"></i></a>
+
+<div id="sidr">
+  <!-- Your content -->
+  <?php html5blank_nav(); ?>
+</div>
+
+<script>
+$(document).ready(function() {
+  $('#simple-menu').sidr();
+});
+</script>
+
+
+
+
+
 					<!-- nav -->
 					<nav class="nav" role="navigation">
-						<?php html5blank_nav(); ?>
+						
+						<div id="navcontainer">
+							<?php html5blank_nav(); ?>
+						</div>
 					</nav>
 					<!-- /nav -->
 
