@@ -2336,9 +2336,6 @@ input:focus {
   background-color: #1B75BB;
   color: #FFF; }
 
-#simple-menu {
-  float: right; }
-
 /* sidebar */
 /* footer */
 .footer {
@@ -2362,7 +2359,14 @@ input:focus {
     clear: both; }
 
   .mobilehide {
-    display: none; } }
+    display: none; }
+
+  #simple-menu {
+    float: right; }
+
+  .logo {
+    max-width: 82%;
+    float: left; } }
 @media only screen and (min-width: 768px) {
   .desktophide {
     display: none; } }

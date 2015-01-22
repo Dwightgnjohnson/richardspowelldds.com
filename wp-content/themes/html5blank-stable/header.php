@@ -29,8 +29,9 @@
 		<!-- wrapper -->
 		<div class="wrapper">
 			<!-- header -->			
-			<a id="simple-menu" href="#sidr" class="desktophide"><i class="fa fa-bars fa-2x"></i></a>
 			<header class="header clear" role="banner">
+					<a id="simple-menu" href="#sidr" class="desktophide"><i class="fa fa-bars fa-3x"></i></a>
+
 					<!-- logo -->
 					<div class="logo">
 						<a href="<?php echo home_url(); ?>">

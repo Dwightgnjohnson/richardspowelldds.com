@@ -157,9 +157,7 @@ input:focus {
 	background-color: $blue;
 	color: #FFF;
 }
-#simple-menu {
-	float:right;
-}
+
 
 /* sidebar */
 .sidebar {}
@@ -196,12 +194,19 @@ input:focus {
 	.mobilehide {
 		display:none;
 	}
-
+	#simple-menu {
+	float:right;
+	}
+	.logo {
+	max-width:82%;
+	float:left;
+	}
 }
 @media only screen and (min-width:768px) {
 	.desktophide {
 		display:none;
 	}
+
 }
 
 @media only screen and (min-width:1024px) {
