@@ -57,7 +57,7 @@ TYPOGRAPHY
 /* html element 62.5% font-size for REM use */
 html {
 	font-size:62.5%;
-	background-color: $orange;
+	background-color: $green;
 }
 body {
 	font:300 16px/1.4 'CaviarDreamsBold', Helvetica, Arial, sans-serif;
@@ -104,7 +104,16 @@ input:focus {
 \*------------------------------------*/
 
 * {}
-
+.rockwall {
+	background-image: url("img/rockwall.jpg");
+	background-color: #cccccc;
+	border-bottom:thick solid white;
+	height:100px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
 /* wrapper */
 .wrapper {
 	max-width:1280px;
@@ -116,6 +125,7 @@ input:focus {
 .header {
 	width:33%;
 	float:left;
+	border:thick solid red;
 }
 .page-content {
 	width:60%;
@@ -125,10 +135,10 @@ input:focus {
 }
 /* logo */
 .logo {
-	
+
 }
 .logo-img {
-	
+
 }
 
 
@@ -137,8 +147,8 @@ input:focus {
 				margin: 0;
 				padding: 0;
 				list-style-type: none;
-				li { 
-					margin: 0 0 .2em 0; 
+				li {
+					margin: 0 0 .2em 0;
 					text-align:center;
 					}
 				}

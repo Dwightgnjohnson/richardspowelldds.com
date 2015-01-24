@@ -25,10 +25,12 @@
 
 	</head>
 	<body <?php body_class(); ?>>
-
 		<!-- wrapper -->
+		<div class="rockwall">.
+		</div>
+
 		<div class="wrapper">
-			<!-- header -->			
+			<!-- header -->
 			<header class="header clear" role="banner">
 					<a id="simple-menu" href="#sidr" class="desktophide"><i class="fa fa-bars fa-3x"></i></a>
 
@@ -59,7 +61,7 @@ $(document).ready(function() {
 
 					<!-- nav -->
 					<nav class="nav" role="navigation">
-						
+
 						<div id="navcontainer" class="mobilehide">
 							<?php html5blank_nav(); ?>
 						</div>

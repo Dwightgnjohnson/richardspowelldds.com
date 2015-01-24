@@ -404,10 +404,10 @@ th {
 
 .sidr.right {
   left: auto;
-  right: -260px; }
+  right: -150px; }
 
 .sidr.left {
-  left: -260px;
+  left: -150px;
   right: auto; }
 
 .sidr h1, .sidr h2, .sidr h3, .sidr h4, .sidr h5, .sidr h6 {
@@ -2253,7 +2253,7 @@ th {
 /* html element 62.5% font-size for REM use */
 html {
   font-size: 62.5%;
-  background-color: #F16522; }
+  background-color: #27855E; }
 
 body {
   font: 300 16px/1.4 'CaviarDreamsBold', Helvetica, Arial, sans-serif;
@@ -2296,6 +2296,16 @@ input:focus {
 /*------------------------------------*\
     STRUCTURE
 \*------------------------------------*/
+.rockwall {
+  background-image: url("img/rockwall.jpg");
+  background-color: #cccccc;
+  border-bottom: thick solid white;
+  height: 100px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
 /* wrapper */
 .wrapper {
   max-width: 1280px;
@@ -2306,7 +2316,8 @@ input:focus {
 /* header */
 .header {
   width: 33%;
-  float: left; }
+  float: left;
+  border: thick solid red; }
 
 .page-content {
   width: 60%;
