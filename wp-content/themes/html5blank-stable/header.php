@@ -14,59 +14,66 @@
 		<meta name="description" content="<?php bloginfo('description'); ?>">
 
 		<?php wp_head(); ?>
-		<script>
+				<script>
         // conditionizr.com
         // configure environment tests
         conditionizr.config({
             assets: '<?php echo get_template_directory_uri(); ?>',
             tests: {}
         });
-        </script>
+
+				$(document).ready(function() {
+					$('#simple-menu').sidr({
+						name: 'sidr-right',
+						side: 'right'
+					});
+				});
+				</script>
 
 	</head>
 	<body <?php body_class(); ?>>
 		<!-- wrapper -->
-		<div class="rockwall">.
+<div class="rockwall-mobile">
+	<a id="simple-menu" href="#sidr" class="desktophide"><i class="fa fa-bars fa-3x"></i></a>
+
+	<!-- logo -->
+	<div class="logo">
+		<a href="<?php echo home_url(); ?>">
+			<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
+			<img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Logo" class="logo-img">
+		</a>
+		<h2 class="tagline"><?php bloginfo('description'); ?></h2>
+	</div>
+
+
+	<div id="sidr-right">
+		<!-- Your content -->
+		<?php html5blank_nav(); ?>
+	</div>
+	<!-- /logo -->
+	</div>
+<div class="wrapper">
+
+		<div class="rockwall-desktop">
+			<!-- logo -->
+			<div class="logo">
+				<a href="<?php echo home_url(); ?>">
+					<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
+					<img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Logo" class="logo-img">
+				</a>
+			</div>
+			<h2 class="tagline"><?php bloginfo('description'); ?></h2>
+			<!-- /logo -->
+			<!-- nav -->
+			<nav class="nav" role="navigation">
+				<div id="navcontainer" class="mobilehide">
+					<?php html5blank_nav(); ?>
+				</div>
+			</nav>
+			<!-- /nav -->
 		</div>
+<!-- 			header
+<header class="header clear" role="banner">
 
-		<div class="wrapper">
-			<!-- header -->
-			<header class="header clear" role="banner">
-					<a id="simple-menu" href="#sidr" class="desktophide"><i class="fa fa-bars fa-3x"></i></a>
-
-					<!-- logo -->
-					<div class="logo">
-						<a href="<?php echo home_url(); ?>">
-							<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
-							<img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Logo" class="logo-img">
-						</a>
-					</div>
-					<h2 class="tagline"><?php bloginfo('description'); ?></h2>
-					<!-- /logo -->
-
-<div id="sidr-right">
-  <!-- Your content -->
-  <?php html5blank_nav(); ?>
-</div>
-
-<script>
-$(document).ready(function() {
-  $('#simple-menu').sidr({
-	  name: 'sidr-right',
-	  side: 'right'
-	});
-});
-</script>
-
-
-					<!-- nav -->
-					<nav class="nav" role="navigation">
-
-						<div id="navcontainer" class="mobilehide">
-							<?php html5blank_nav(); ?>
-						</div>
-					</nav>
-					<!-- /nav -->
-
-			</header>
-			<!-- /header -->
+</header>
+/header -->
