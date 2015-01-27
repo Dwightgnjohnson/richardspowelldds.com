@@ -2348,23 +2348,6 @@ input:focus {
   .logo img {
     padding-top: 5px;
     max-height: 65px; } }
-@media only screen and (min-width: 768px) {
-  .desktophide {
-    display: none; }
-
-  .rockwall-mobile {
-    display: none; }
-
-  .rockwall-desktop {
-    background-color: #F16522;
-    background-image: none;
-    width: 33%;
-    float: left; }
-
-  .page-content {
-    padding: 0 5%;
-    float: left;
-    border: thin solid red; } }
 @media only screen and (max-width: 767px) {
   .header {
     width: 100%;
@@ -2399,6 +2382,24 @@ input:focus {
 
   .rockwall-desktop {
     display: none; } }
+@media only screen and (min-width: 768px) {
+  .desktophide {
+    display: none; }
+
+  .rockwall-mobile {
+    display: none; }
+
+  .rockwall-desktop {
+    background-color: #F16522;
+    background-image: none;
+    width: 33%;
+    float: left; }
+
+  .page-content {
+    padding: 0 5%;
+    float: left;
+    width: 66%;
+    border: thin solid red; } }
 /*------------------------------------*\
     MISC
 \*------------------------------------*/
