@@ -57,11 +57,11 @@ TYPOGRAPHY
 /* html element 62.5% font-size for REM use */
 html {
 	font-size:62.5%;
-	background-color: $green;
+	background-color: $white;
 }
 body {
 	font:300 16px/1.4 'CaviarDreamsBold', Helvetica, Arial, sans-serif;
-	color:white;
+	color:$blue;
 }
 /* clear */
 .clear:before,
@@ -130,22 +130,6 @@ input:focus {
 					text-align:center;
 					}
 				}
-
-#navcontainer a {
-	display: block;
-	color: #FFF;
-	background-color: $orange;
-	border: thin solid $white;
-	padding: 0em .8em;
-	text-decoration: none;
-}
-
-#navcontainer a:hover {
-	background-color: $blue;
-	color: #FFF;
-}
-
-
 /* sidebar */
 .sidebar {}
 
@@ -153,19 +137,21 @@ input:focus {
 .footer {
 	clear:both;
 }
-
+.tagline {
+	color:$white;
+}
 
 /*------------------------------------*\
     RESPONSIVE
 \*------------------------------------*/
 @media only screen and (max-width:320px) {
-	.logo img {
+	.logo-img {
 		padding-top:5px;
 		max-height:50px;
 	}
 }
 @media only screen and (min-width:320px) {
-	.logo img {
+	.logo-img {
 		padding-top:5px;
 		max-height:65px;
 	}
@@ -173,6 +159,8 @@ input:focus {
 @media only screen and (min-width:480px) {}
 @media only screen and (max-width:480px) {}
 @media only screen and (min-width:640px) {}
+
+/* Mobile: */
 @media only screen and (max-width:767px) {
 	.header {
 		width:100%;
@@ -188,8 +176,7 @@ input:focus {
 		display:none;
 	}
 	.rockwall-mobile {
-		background-image: url("img/rockwall.jpg");
-		border-bottom:thick solid white;
+		background-image: url("img/rockwall_plain.jpg");
 		height:110px;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
@@ -205,10 +192,12 @@ input:focus {
 		}
 	}
 	.page-content {
-		border:thin solid blue;
+		padding:0;margin:0;
+		padding:0 1em;
 	}
 	.rockwall-desktop {display:none;}
 }
+/* desktop: */
 @media only screen and (min-width:768px) {
 	.desktophide {
 		display:none;
@@ -217,17 +206,46 @@ input:focus {
 		display:none;
 	}
 	.rockwall-desktop {
-		background-color: $orange;
-		background-image: none;
 		width:33%;
 		float:left;
+	}
+	.logo {
+		background-image: url("img/rockwall_plain.jpg");
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		padding:.5em 1em 5px 1em;
+		.logo-img {
+			padding-top:0px;
+			max-height:100%;
+		}
+		.tagline {
+			font-size:1em;
+		}
+	}
+	.nav-desktop {
+		margin-top:.5em;
+	}
+	#navcontainer a {
+		display: block;
+		color: $blue;
+		background-color: $white;
+		border: thin solid $blue;
+		padding: 0em 1em;
+		text-decoration: none;
+	}
+
+	#navcontainer a:hover {
+		background-color: $blue;
+		color: #FFF;
 	}
 	.page-content {
 		padding:0 5%;
 		float:left;
 		width:66%;
-		border:thin solid red;
 	}
+
 }
 
 

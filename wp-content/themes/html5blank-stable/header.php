@@ -55,25 +55,15 @@
 <div class="wrapper">
 
 		<div class="rockwall-desktop">
-			<!-- logo -->
 			<div class="logo">
 				<a href="<?php echo home_url(); ?>">
-					<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
-					<img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Logo" class="logo-img">
+					<img class="logo-img" src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Logo" >
 				</a>
+				<h2 class="tagline"><?php bloginfo('description'); ?></h2>
 			</div>
-			<h2 class="tagline"><?php bloginfo('description'); ?></h2>
-			<!-- /logo -->
-			<!-- nav -->
-			<nav class="nav" role="navigation">
+			<nav class="nav-desktop" role="navigation">
 				<div id="navcontainer" class="mobilehide">
 					<?php html5blank_nav(); ?>
 				</div>
 			</nav>
-			<!-- /nav -->
 		</div>
-<!-- 			header
-<header class="header clear" role="banner">
-
-</header>
-/header -->
