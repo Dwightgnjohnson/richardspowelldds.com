@@ -15,10 +15,11 @@
     COLORS
 \*------------------------------------*/
 
-$orange: #F16522;
+$orange: #f05827;
 $blue: #1B75BB;
 $green: #27855E;
 $white: white;
+$gray: #404041;
 
 /*------------------------------------*\
 TYPOGRAPHY
@@ -61,7 +62,7 @@ html {
 }
 body {
 	font:300 16px/1.4 'CaviarDreamsBold', Helvetica, Arial, sans-serif;
-	color:$blue;
+	color:$gray;
 }
 /* clear */
 .clear:before,
@@ -98,6 +99,11 @@ input:focus {
 	outline:0;
 	border:1px solid $orange;
 }
+h1.page-title {
+	padding:.5em 1em;
+	margin:0;
+	margin-left:-1%;
+}
 
 /*------------------------------------*\
     STRUCTURE
@@ -110,6 +116,7 @@ input:focus {
 	width:100%;
 	margin:0px auto;
 	position:relative;
+	background-color:$white;
 }
 /* header */
 .header {
@@ -117,25 +124,28 @@ input:focus {
 	float:left;
 }
 .page-content {
-	float:left;
+	padding-left:2%;
+	.orange, .blue, .green {
+		color:white;
+		padding:1em;
+	}
+	.orange {
+		background-color:$orange;
+	}
+	.blue {
+		background-color:$blue;
+	}
+	.green {
+		background-color:$green;
+	}
 }
-
-/* nav */
-#navcontainer ul {
-				margin: 0;
-				padding: 0;
-				list-style-type: none;
-				li {
-					margin: 0 0 .2em 0;
-					text-align:center;
-					}
-				}
 /* sidebar */
 .sidebar {}
 
 /* footer */
 .footer {
 	clear:both;
+	text-align:center;
 }
 .tagline {
 	color:$white;
@@ -147,13 +157,25 @@ input:focus {
 @media only screen and (max-width:320px) {
 	.logo-img {
 		padding-top:5px;
-		max-height:50px;
-	}
+		height:70px;
+		}
 }
 @media only screen and (min-width:320px) {
-	.logo-img {
+	.logo .logo-img {
 		padding-top:5px;
-		max-height:65px;
+		height:80px;
+	}
+	.page-content {
+		.orange, .blue, .green {
+			margin:0;
+			padding:5% 10%;
+			overflow:hidden;
+		}
+		h1.page-title {
+			background-color:$blue;
+			color:$white;
+			font-size:1.1em;
+		}
 	}
 }
 @media only screen and (min-width:480px) {}
@@ -182,7 +204,8 @@ input:focus {
 		-moz-background-size: cover;
 		-o-background-size: cover;
 		background-size: cover;
-		margin:0;padding:0 3%;
+		margin:0;padding:0 3% 0 0;
+		border-bottom: thick solid $orange;
 
 		#simple-menu {
 			float:right;
@@ -206,16 +229,19 @@ input:focus {
 		display:none;
 	}
 	.rockwall-desktop {
+		position:fixed;
 		width:33%;
 		float:left;
-	}
-	.logo {
+		padding-bottom:30px;
 		background-image: url("img/rockwall_plain.jpg");
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
 		background-size: cover;
-		padding:.5em 1em 5px 1em;
+	}
+	.logo-desktop {
+		padding:.5em 1em 5px 0em;
+		border-top: thick solid $orange;
 		.logo-img {
 			padding-top:0px;
 			max-height:100%;
@@ -227,30 +253,73 @@ input:focus {
 	.nav-desktop {
 		margin-top:.5em;
 	}
+	#navcontainer ul {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		li {
+			margin: 0 0 .2em 0;
+			text-align:left;
+		}
+	}
 	#navcontainer a {
 		display: block;
 		color: $blue;
 		background-color: $white;
-		border: thin solid $blue;
-		padding: 0em 1em;
+		padding: .3em 0 0 1em;
 		text-decoration: none;
+		width:60%;
+		-webkit-transition: .7s ease-in-out; -moz-transition: .7s ease-in-out; -o-transition: .7s ease-in-out; transition: .7s ease-in-out;
 	}
-
-	#navcontainer a:hover {
-		background-color: $blue;
-		color: #FFF;
+	#navcontainer a:hover, #navcontainer a:active {
+		background-color: $orange;
+		color: $white;
+		margin-left:10%;
 	}
 	.page-content {
-		padding:0 5%;
 		float:left;
 		width:66%;
+		min-height:500px;
+		margin-left:33%;
+		/* background-image: url("img/bluegreenorange.gif"); */
+		background-color:$white;
+		color:$gray;
+		h1.page-title {
+			background-color:$blue;
+			background-image: url("img/bluegreenorange.gif");
+			color:$white;
+			font-size:2em;
+		}
+		.orange, .blue, .green {
+			margin:0;
+			padding:5%;
+		}
 	}
-
 }
 
 
 @media only screen and (min-width:1024px) {
-
+	.rockwall-desktop {
+		position:fixed;
+		width:30%;
+		max-width:420px;
+		float:left;
+	}
+	.page-content {
+		float:left;
+		width:60%;
+		margin-left:33%;
+		p {
+			max-width:90%;
+		}
+		.orange, .blue, .green {
+			margin:0;
+			padding:5%;
+			p {
+				max-width:100%;
+			}
+		}
+	}
 }
 @media only screen and (min-width:1140px) {
 

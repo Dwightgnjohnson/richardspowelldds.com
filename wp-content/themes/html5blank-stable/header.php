@@ -28,6 +28,7 @@
 						side: 'right'
 					});
 				});
+
 				</script>
 
 	</head>
@@ -40,27 +41,26 @@
 	<div class="logo">
 		<a href="<?php echo home_url(); ?>">
 			<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
-			<img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Logo" class="logo-img">
+			<img src="<?php echo get_template_directory_uri(); ?>/img/logo.gif" alt="Logo" class="logo-img">
 		</a>
-		<h2 class="tagline"><?php bloginfo('description'); ?></h2>
+		<!-- <h2 class="tagline"><?php bloginfo('description'); ?></h2> -->
 	</div>
-
+</div>
 
 	<div id="sidr-right">
 		<!-- Your content -->
 		<?php html5blank_nav(); ?>
 	</div>
 	<!-- /logo -->
-	</div>
+
 <div class="wrapper">
 
 		<div class="rockwall-desktop">
-			<div class="logo">
+			<div class="logo-desktop">
 				<a href="<?php echo home_url(); ?>">
-					<img class="logo-img" src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Logo" >
+					<img class="logo-img" src="<?php echo get_template_directory_uri(); ?>/img/logo.gif" alt="Logo" >
 				</a>
-				<h2 class="tagline"><?php bloginfo('description'); ?></h2>
-			</div>
+<!-- 				<h2 class="tagline"><?php bloginfo('description'); ?></h2> -->			</div>
 			<nav class="nav-desktop" role="navigation">
 				<div id="navcontainer" class="mobilehide">
 					<?php html5blank_nav(); ?>
