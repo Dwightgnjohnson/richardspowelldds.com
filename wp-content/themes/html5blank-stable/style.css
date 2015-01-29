@@ -3537,13 +3537,13 @@ img {
 
 /* line 84, style.scss */
 a {
-  color: white;
+  color: #404041;
   text-decoration: underline;
 }
 
 /* line 88, style.scss */
 a:hover {
-  color: #444;
+  color: #404041;
 }
 
 /* line 91, style.scss */
@@ -3558,12 +3558,28 @@ a:active {
 }
 
 /* line 98, style.scss */
+a.fa {
+  color: white;
+}
+
+/* line 101, style.scss */
+a.fa:hover {
+  color: white;
+}
+
+/* line 104, style.scss */
+a:visited {
+  color: #404041;
+  text-decoration: none;
+}
+
+/* line 108, style.scss */
 input:focus {
   outline: 0;
   border: 1px solid #f05827;
 }
 
-/* line 102, style.scss */
+/* line 112, style.scss */
 h1.page-title {
   padding: .5em 1em;
   margin: 0;
@@ -3574,7 +3590,7 @@ h1.page-title {
     STRUCTURE
 \*------------------------------------*/
 /* wrapper */
-/* line 114, style.scss */
+/* line 124, style.scss */
 .wrapper {
   max-width: 1280px;
   width: 100%;
@@ -3584,43 +3600,72 @@ h1.page-title {
 }
 
 /* header */
-/* line 122, style.scss */
+/* line 132, style.scss */
 .header {
   width: 33%;
   float: left;
 }
 
-/* line 126, style.scss */
+/* line 136, style.scss */
+.orangetext {
+  color: #f05827;
+}
+
+/* line 137, style.scss */
+.bluetext {
+  color: #1b75bb;
+}
+
+/* line 138, style.scss */
+.greentext {
+  color: #27855e;
+}
+
+/* line 139, style.scss */
+#contact {
+  background-color: white;
+  padding: 5%;
+  width: 95%;
+  margin: 10px 0 0 0;
+  font-size: .8em;
+}
+
+/* line 146, style.scss */
 .page-content {
   padding-left: 2%;
 }
-/* line 128, style.scss */
+/* line 148, style.scss */
+.page-content img {
+  max-width: 100%;
+  height: auto;
+}
+/* line 151, style.scss */
 .page-content .orange, .page-content .blue, .page-content .green {
   color: white;
   padding: 1em;
 }
-/* line 132, style.scss */
+/* line 155, style.scss */
 .page-content .orange {
   background-color: #f05827;
 }
-/* line 135, style.scss */
+/* line 158, style.scss */
 .page-content .blue {
   background-color: #1b75bb;
 }
-/* line 138, style.scss */
+/* line 161, style.scss */
 .page-content .green {
   background-color: #27855e;
 }
 
 /* sidebar */
 /* footer */
-/* line 146, style.scss */
+/* line 169, style.scss */
 .footer {
   clear: both;
   text-align: center;
 }
 
-/* line 150, style.scss */
+/* line 173, style.scss */
 .tagline {
   color: white;
 }
@@ -3629,26 +3674,26 @@ h1.page-title {
     RESPONSIVE
 \*------------------------------------*/
 @media only screen and (max-width: 320px) {
-  /* line 158, style.scss */
+  /* line 181, style.scss */
   .logo-img {
     padding-top: 5px;
     height: 70px;
   }
 }
 @media only screen and (min-width: 320px) {
-  /* line 164, style.scss */
+  /* line 187, style.scss */
   .logo .logo-img {
     padding-top: 5px;
     height: 80px;
   }
 
-  /* line 169, style.scss */
+  /* line 192, style.scss */
   .page-content .orange, .page-content .blue, .page-content .green {
     margin: 0;
     padding: 5% 10%;
     overflow: hidden;
   }
-  /* line 174, style.scss */
+  /* line 197, style.scss */
   .page-content h1.page-title {
     background-color: #1b75bb;
     color: white;
@@ -3657,13 +3702,13 @@ h1.page-title {
 }
 /* Mobile: */
 @media only screen and (max-width: 767px) {
-  /* line 187, style.scss */
+  /* line 210, style.scss */
   .header {
     width: 100%;
     clear: both;
   }
 
-  /* line 191, style.scss */
+  /* line 214, style.scss */
   .page-content {
     width: 100%;
     margin: 0;
@@ -3671,12 +3716,12 @@ h1.page-title {
     clear: both;
   }
 
-  /* line 197, style.scss */
+  /* line 220, style.scss */
   .mobilehide {
     display: none;
   }
 
-  /* line 200, style.scss */
+  /* line 223, style.scss */
   .rockwall-mobile {
     background-image: url("img/rockwall_plain.jpg");
     height: 110px;
@@ -3688,40 +3733,48 @@ h1.page-title {
     padding: 0 3% 0 0;
     border-bottom: thick solid #f05827;
   }
-  /* line 210, style.scss */
+  /* line 233, style.scss */
   .rockwall-mobile #simple-menu {
     float: right;
   }
-  /* line 213, style.scss */
+  /* line 235, style.scss */
+  .rockwall-mobile #simple-menu a {
+    color: white;
+  }
+  /* line 238, style.scss */
+  .rockwall-mobile #simple-menu a:hover {
+    color: #f05827;
+  }
+  /* line 242, style.scss */
   .rockwall-mobile h2.tagline {
     font-size: .8em;
   }
 
-  /* line 217, style.scss */
+  /* line 246, style.scss */
   .page-content {
     padding: 0;
     margin: 0;
     padding: 0 1em;
   }
 
-  /* line 221, style.scss */
+  /* line 250, style.scss */
   .rockwall-desktop {
     display: none;
   }
 }
 /* desktop: */
 @media only screen and (min-width: 768px) {
-  /* line 225, style.scss */
+  /* line 254, style.scss */
   .desktophide {
     display: none;
   }
 
-  /* line 228, style.scss */
+  /* line 257, style.scss */
   .rockwall-mobile {
     display: none;
   }
 
-  /* line 231, style.scss */
+  /* line 260, style.scss */
   .rockwall-desktop {
     position: fixed;
     width: 33%;
@@ -3734,39 +3787,39 @@ h1.page-title {
     background-size: cover;
   }
 
-  /* line 242, style.scss */
+  /* line 271, style.scss */
   .logo-desktop {
     padding: .5em 1em 5px 0em;
     border-top: thick solid #f05827;
   }
-  /* line 245, style.scss */
+  /* line 274, style.scss */
   .logo-desktop .logo-img {
     padding-top: 0px;
     max-height: 100%;
   }
-  /* line 249, style.scss */
+  /* line 278, style.scss */
   .logo-desktop .tagline {
     font-size: 1em;
   }
 
-  /* line 253, style.scss */
+  /* line 282, style.scss */
   .nav-desktop {
     margin-top: .5em;
   }
 
-  /* line 256, style.scss */
+  /* line 285, style.scss */
   #navcontainer ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
   }
-  /* line 260, style.scss */
+  /* line 289, style.scss */
   #navcontainer ul li {
     margin: 0 0 .2em 0;
     text-align: left;
   }
 
-  /* line 265, style.scss */
+  /* line 294, style.scss */
   #navcontainer a {
     display: block;
     color: #1b75bb;
@@ -3780,14 +3833,14 @@ h1.page-title {
     transition: .7s ease-in-out;
   }
 
-  /* line 274, style.scss */
+  /* line 303, style.scss */
   #navcontainer a:hover, #navcontainer a:active {
     background-color: #f05827;
     color: white;
     margin-left: 10%;
   }
 
-  /* line 279, style.scss */
+  /* line 308, style.scss */
   .page-content {
     float: left;
     width: 66%;
@@ -3797,21 +3850,21 @@ h1.page-title {
     background-color: white;
     color: #404041;
   }
-  /* line 287, style.scss */
+  /* line 316, style.scss */
   .page-content h1.page-title {
     background-color: #1b75bb;
     background-image: url("img/bluegreenorange.gif");
     color: white;
     font-size: 2em;
   }
-  /* line 293, style.scss */
+  /* line 322, style.scss */
   .page-content .orange, .page-content .blue, .page-content .green {
     margin: 0;
     padding: 5%;
   }
 }
 @media only screen and (min-width: 1024px) {
-  /* line 302, style.scss */
+  /* line 331, style.scss */
   .rockwall-desktop {
     position: fixed;
     width: 30%;
@@ -3819,22 +3872,22 @@ h1.page-title {
     float: left;
   }
 
-  /* line 308, style.scss */
+  /* line 337, style.scss */
   .page-content {
     float: left;
     width: 60%;
     margin-left: 33%;
   }
-  /* line 312, style.scss */
+  /* line 341, style.scss */
   .page-content p {
     max-width: 90%;
   }
-  /* line 315, style.scss */
+  /* line 344, style.scss */
   .page-content .orange, .page-content .blue, .page-content .green {
     margin: 0;
     padding: 5%;
   }
-  /* line 318, style.scss */
+  /* line 347, style.scss */
   .page-content .orange p, .page-content .blue p, .page-content .green p {
     max-width: 100%;
   }
@@ -3842,21 +3895,21 @@ h1.page-title {
 /*------------------------------------*\
     MISC
 \*------------------------------------*/
-/* line 339, style.scss */
+/* line 368, style.scss */
 ::selection {
   background: #1b75bb;
   color: #FFF;
   text-shadow: none;
 }
 
-/* line 344, style.scss */
+/* line 373, style.scss */
 ::-webkit-selection {
   background: #1b75bb;
   color: #FFF;
   text-shadow: none;
 }
 
-/* line 349, style.scss */
+/* line 378, style.scss */
 ::-moz-selection {
   background: #blue;
   color: #FFF;
@@ -3866,55 +3919,55 @@ h1.page-title {
 /*------------------------------------*\
     WORDPRESS CORE
 \*------------------------------------*/
-/* line 359, style.scss */
+/* line 388, style.scss */
 .alignnone {
   margin: 5px 20px 20px 0;
 }
 
-/* line 363, style.scss */
+/* line 392, style.scss */
 .aligncenter,
 div.aligncenter {
   display: block;
   margin: 5px auto 5px auto;
 }
 
-/* line 367, style.scss */
+/* line 396, style.scss */
 .alignright {
   float: right;
   margin: 5px 0 20px 20px;
 }
 
-/* line 371, style.scss */
+/* line 400, style.scss */
 .alignleft {
   float: left;
   margin: 5px 20px 20px 0;
 }
 
-/* line 375, style.scss */
+/* line 404, style.scss */
 a img.alignright {
   float: right;
   margin: 5px 0 20px 20px;
 }
 
-/* line 379, style.scss */
+/* line 408, style.scss */
 a img.alignnone {
   margin: 5px 20px 20px 0;
 }
 
-/* line 382, style.scss */
+/* line 411, style.scss */
 a img.alignleft {
   float: left;
   margin: 5px 20px 20px 0;
 }
 
-/* line 386, style.scss */
+/* line 415, style.scss */
 a img.aligncenter {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 391, style.scss */
+/* line 420, style.scss */
 .wp-caption {
   background: #FFF;
   border: 1px solid #F0F0F0;
@@ -3923,22 +3976,22 @@ a img.aligncenter {
   text-align: center;
 }
 
-/* line 398, style.scss */
+/* line 427, style.scss */
 .wp-caption.alignnone {
   margin: 5px 20px 20px 0;
 }
 
-/* line 401, style.scss */
+/* line 430, style.scss */
 .wp-caption.alignleft {
   margin: 5px 20px 20px 0;
 }
 
-/* line 404, style.scss */
+/* line 433, style.scss */
 .wp-caption.alignright {
   margin: 5px 0 20px 20px;
 }
 
-/* line 407, style.scss */
+/* line 436, style.scss */
 .wp-caption img {
   border: 0 none;
   height: auto;
@@ -3948,7 +4001,7 @@ a img.aligncenter {
   width: auto;
 }
 
-/* line 416, style.scss */
+/* line 445, style.scss */
 .wp-caption .wp-caption-text,
 .gallery-caption {
   font-size: 11px;
@@ -3961,7 +4014,7 @@ a img.aligncenter {
     PRINT
 \*------------------------------------*/
 @media print {
-  /* line 434, style.scss */
+  /* line 463, style.scss */
   * {
     background: transparent !important;
     color: #000 !important;
@@ -3969,46 +4022,46 @@ a img.aligncenter {
     text-shadow: none !important;
   }
 
-  /* line 441, style.scss */
+  /* line 470, style.scss */
   a,
   a:visited {
     text-decoration: underline;
   }
 
-  /* line 444, style.scss */
+  /* line 473, style.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 447, style.scss */
+  /* line 476, style.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
 
-  /* line 452, style.scss */
+  /* line 481, style.scss */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: "";
   }
 
-  /* line 455, style.scss */
+  /* line 484, style.scss */
   pre, blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-  /* line 459, style.scss */
+  /* line 488, style.scss */
   thead {
     display: table-header-group;
   }
 
-  /* line 462, style.scss */
+  /* line 491, style.scss */
   tr, img {
     page-break-inside: avoid;
   }
 
-  /* line 465, style.scss */
+  /* line 494, style.scss */
   img {
     max-width: 100% !important;
   }
@@ -4017,7 +4070,7 @@ a img.aligncenter {
     margin: 0.5cm;
 }
 
-  /* line 473, style.scss */
+  /* line 502, style.scss */
   p,
   h2,
   h3 {
@@ -4025,7 +4078,7 @@ a img.aligncenter {
     widows: 3;
   }
 
-  /* line 478, style.scss */
+  /* line 507, style.scss */
   h2,
   h3 {
     page-break-after: avoid;

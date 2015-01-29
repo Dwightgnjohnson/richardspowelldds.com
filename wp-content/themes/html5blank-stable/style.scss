@@ -82,11 +82,11 @@ img {
 	vertical-align:bottom;
 }
 a {
-	color:white;
+	color:$gray;
 	text-decoration:underline;
 }
 a:hover {
-	color:#444;
+	color:$gray;
 }
 a:focus {
 	outline:0;
@@ -94,6 +94,16 @@ a:focus {
 a:hover,
 a:active {
 	outline:0;
+}
+a.fa {
+	color:$white;
+}
+a.fa:hover {
+	color:$white;
+}
+a:visited {
+	color:$gray;
+	text-decoration:none;
 }
 input:focus {
 	outline:0;
@@ -123,8 +133,21 @@ h1.page-title {
 	width:33%;
 	float:left;
 }
+.orangetext {color:$orange;}
+.bluetext {color:$blue;}
+.greentext {color:$green;}
+ #contact {
+	background-color:$white;
+	padding:5%;
+	width:95%;
+	margin: 10px 0 0 0;
+	font-size:.8em;
+}
 .page-content {
 	padding-left:2%;
+	img {
+		max-width:100%;height:auto;
+	}
 	.orange, .blue, .green {
 		color:white;
 		padding:1em;
@@ -209,6 +232,12 @@ h1.page-title {
 
 		#simple-menu {
 			float:right;
+			a {
+				color:$white;
+			}
+			a:hover {
+				color:$orange;
+			}
 		}
 		h2.tagline {
 			font-size:.8em;
