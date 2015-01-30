@@ -11,7 +11,6 @@
 
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="<?php bloginfo('description'); ?>">
 
 		<?php wp_head(); ?>
 				<script>
@@ -29,22 +28,23 @@
 					});
 				});
 
+				$("body").css('overflow', 'hidden');
+
 				</script>
 
 	</head>
 	<body <?php body_class(); ?>>
 		<!-- wrapper -->
 <div class="rockwall-mobile">
-	<a id="simple-menu" href="#" class="btn btn-danger "><i class="fa fa-bars fa-3x"></i></a>
+	<a id="simple-menu" href="#" class=""><button class="btn btn-default"><i class="fa fa-bars fa-3x whitetext"></i></button></a>
+	<button class="phone"><a class="btn btn-danger" href="tel:5302688182"><i class="fa fa-phone-square fa-4x whitetext"></i></a></button>
 
 	<!-- logo -->
 	<div class="logo">
 		<a href="<?php echo home_url(); ?>">
-			<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
 			<img src="<?php echo get_template_directory_uri(); ?>/img/logo.gif" alt="Logo" class="logo-img">
 		</a>
-		<!-- <h2 class="tagline"><?php bloginfo('description'); ?></h2> -->
-	</div>
+			</div>
 </div>
 
 	<div id="sidr-right">
@@ -67,12 +67,11 @@
 				</div>
 			</nav>
 
-			<div id="contact">
-				<i class="fa fa-phone-square fa-2x orangetext"></i> <a href="tel:5302688182">530.268.8182</a>
+			<div id="contact" class="blue">
+				<h3><i class="fa fa-phone-square fa-2x orangetext"></i> Call us Today at <strong>(530) 268-8182</strong></h3>
 
 				<br />
 
-				<span class="fa-stack"><i class="fa fa-square fa-stack-2x orangetext"></i><i class="fa fa-map-marker fa-stack-1x fa-inverse"></i></span> <a href="http://goo.gl/maps/EBMHd" target="_blank">10044 WOLF ROAD, SUITE D, GRASS VALLEY, CA 95949</a>
 				<iframe style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12395.085651402507!2d-121.095798!3d39.043331!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x77ad6f7ffdc62c4c!2sRichard+S+Powell+DDS!5e0!3m2!1sen!2sus!4v1422570306143" width="100%" height="auto" frameborder="0"></iframe>
 
 

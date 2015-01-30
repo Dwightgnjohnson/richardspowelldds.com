@@ -101,10 +101,6 @@ a.fa {
 a.fa:hover {
 	color:$white;
 }
-a:visited {
-	color:$gray;
-	text-decoration:none;
-}
 input:focus {
 	outline:0;
 	border:1px solid $orange;
@@ -126,7 +122,6 @@ h1.page-title {
 	width:100%;
 	margin:0px auto;
 	position:relative;
-	background-color:$white;
 }
 /* header */
 .header {
@@ -136,13 +131,8 @@ h1.page-title {
 .orangetext {color:$orange;}
 .bluetext {color:$blue;}
 .greentext {color:$green;}
- #contact {
-	background-color:$white;
-	padding:5%;
-	width:95%;
-	margin: 10px 0 0 0;
-	font-size:.8em;
-}
+.whitetext {color:$white;}
+
 .page-content {
 	padding-left:2%;
 	img {
@@ -186,7 +176,7 @@ h1.page-title {
 @media only screen and (min-width:320px) {
 	.logo .logo-img {
 		padding-top:5px;
-		height:80px;
+		height:60px;
 	}
 	.page-content {
 		.orange, .blue, .green {
@@ -201,7 +191,12 @@ h1.page-title {
 		}
 	}
 }
-@media only screen and (min-width:480px) {}
+@media only screen and (min-width:480px) {
+	.logo .logo-img {
+		padding-top:5px;
+		height:80px;
+	}
+}
 @media only screen and (max-width:480px) {}
 @media only screen and (min-width:640px) {}
 
@@ -229,14 +224,27 @@ h1.page-title {
 		background-size: cover;
 		margin:0;padding:0 3% 0 0;
 		border-bottom: thick solid $orange;
+		button.phone {
+			border:0;
+			padding:0;
+			width:50px;
+			height:50px;
+			background:transparent;
+			margin:3px 5px 0 0;
+			float:right;
+			font-size:.8em;
+		}
 
 		#simple-menu {
 			float:right;
-			a {
-				color:$white;
-			}
-			a:hover {
-				color:$orange;
+			button {
+				border:none;
+				background-color:$green;
+				margin-top:5%;
+				padding:0;
+				width:50px;
+				height:50px;
+				background:transparent;
 			}
 		}
 		h2.tagline {
@@ -267,6 +275,15 @@ h1.page-title {
 		-moz-background-size: cover;
 		-o-background-size: cover;
 		background-size: cover;
+
+		#contact {
+		background-color:$white;
+		padding:5%;
+		width:95%;
+		margin: 20px 0 0 0;
+		font-size:1em;
+		border-top:thick solid $orange;
+	}
 	}
 	.logo-desktop {
 		padding:.5em 1em 5px 0em;
@@ -313,6 +330,7 @@ h1.page-title {
 		/* background-image: url("img/bluegreenorange.gif"); */
 		background-color:$white;
 		color:$gray;
+
 		h1.page-title {
 			background-color:$blue;
 			background-image: url("img/bluegreenorange.gif");
@@ -336,7 +354,7 @@ h1.page-title {
 	}
 	.page-content {
 		float:left;
-		width:60%;
+		width:66%;
 		margin-left:33%;
 		p {
 			max-width:90%;

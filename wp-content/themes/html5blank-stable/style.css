@@ -3568,18 +3568,12 @@ a.fa:hover {
 }
 
 /* line 104, style.scss */
-a:visited {
-  color: #404041;
-  text-decoration: none;
-}
-
-/* line 108, style.scss */
 input:focus {
   outline: 0;
   border: 1px solid #f05827;
 }
 
-/* line 112, style.scss */
+/* line 108, style.scss */
 h1.page-title {
   padding: .5em 1em;
   margin: 0;
@@ -3590,82 +3584,77 @@ h1.page-title {
     STRUCTURE
 \*------------------------------------*/
 /* wrapper */
-/* line 124, style.scss */
+/* line 120, style.scss */
 .wrapper {
   max-width: 1280px;
   width: 100%;
   margin: 0px auto;
   position: relative;
-  background-color: white;
 }
 
 /* header */
-/* line 132, style.scss */
+/* line 127, style.scss */
 .header {
   width: 33%;
   float: left;
 }
 
-/* line 136, style.scss */
+/* line 131, style.scss */
 .orangetext {
   color: #f05827;
 }
 
-/* line 137, style.scss */
+/* line 132, style.scss */
 .bluetext {
   color: #1b75bb;
 }
 
-/* line 138, style.scss */
+/* line 133, style.scss */
 .greentext {
   color: #27855e;
 }
 
-/* line 139, style.scss */
-#contact {
-  background-color: white;
-  padding: 5%;
-  width: 95%;
-  margin: 10px 0 0 0;
-  font-size: .8em;
+/* line 134, style.scss */
+.whitetext {
+  color: white;
 }
 
-/* line 146, style.scss */
+/* line 136, style.scss */
 .page-content {
   padding-left: 2%;
 }
-/* line 148, style.scss */
+/* line 138, style.scss */
 .page-content img {
   max-width: 100%;
   height: auto;
 }
-/* line 151, style.scss */
+/* line 141, style.scss */
 .page-content .orange, .page-content .blue, .page-content .green {
   color: white;
   padding: 1em;
 }
-/* line 155, style.scss */
+/* line 145, style.scss */
 .page-content .orange {
   background-color: #f05827;
 }
-/* line 158, style.scss */
+/* line 148, style.scss */
 .page-content .blue {
   background-color: #1b75bb;
 }
-/* line 161, style.scss */
+/* line 151, style.scss */
 .page-content .green {
   background-color: #27855e;
 }
 
 /* sidebar */
 /* footer */
-/* line 169, style.scss */
+/* line 159, style.scss */
 .footer {
   clear: both;
   text-align: center;
 }
 
-/* line 173, style.scss */
+/* line 163, style.scss */
 .tagline {
   color: white;
 }
@@ -3674,41 +3663,48 @@ h1.page-title {
     RESPONSIVE
 \*------------------------------------*/
 @media only screen and (max-width: 320px) {
-  /* line 181, style.scss */
+  /* line 171, style.scss */
   .logo-img {
     padding-top: 5px;
     height: 70px;
   }
 }
 @media only screen and (min-width: 320px) {
-  /* line 187, style.scss */
+  /* line 177, style.scss */
   .logo .logo-img {
     padding-top: 5px;
-    height: 80px;
+    height: 60px;
   }
 
-  /* line 192, style.scss */
+  /* line 182, style.scss */
   .page-content .orange, .page-content .blue, .page-content .green {
     margin: 0;
     padding: 5% 10%;
     overflow: hidden;
   }
-  /* line 197, style.scss */
+  /* line 187, style.scss */
   .page-content h1.page-title {
     background-color: #1b75bb;
     color: white;
     font-size: 1.1em;
   }
 }
+@media only screen and (min-width: 480px) {
+  /* line 195, style.scss */
+  .logo .logo-img {
+    padding-top: 5px;
+    height: 80px;
+  }
+}
 /* Mobile: */
 @media only screen and (max-width: 767px) {
-  /* line 210, style.scss */
+  /* line 205, style.scss */
   .header {
     width: 100%;
     clear: both;
   }
 
-  /* line 214, style.scss */
+  /* line 209, style.scss */
   .page-content {
     width: 100%;
     margin: 0;
@@ -3716,12 +3712,12 @@ h1.page-title {
     clear: both;
   }
 
-  /* line 220, style.scss */
+  /* line 215, style.scss */
   .mobilehide {
     display: none;
   }
 
-  /* line 223, style.scss */
+  /* line 218, style.scss */
   .rockwall-mobile {
     background-image: url("img/rockwall_plain.jpg");
     height: 110px;
@@ -3733,48 +3729,61 @@ h1.page-title {
     padding: 0 3% 0 0;
     border-bottom: thick solid #f05827;
   }
-  /* line 233, style.scss */
+  /* line 227, style.scss */
+  .rockwall-mobile button.phone {
+    border: 0;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    margin: 3px 5px 0 0;
+    float: right;
+    font-size: .8em;
+  }
+  /* line 238, style.scss */
   .rockwall-mobile #simple-menu {
     float: right;
   }
-  /* line 235, style.scss */
-  .rockwall-mobile #simple-menu a {
-    color: white;
+  /* line 240, style.scss */
+  .rockwall-mobile #simple-menu button {
+    border: none;
+    background-color: #27855e;
+    margin-top: 5%;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    background: transparent;
   }
-  /* line 238, style.scss */
-  .rockwall-mobile #simple-menu a:hover {
-    color: #f05827;
-  }
-  /* line 242, style.scss */
+  /* line 250, style.scss */
   .rockwall-mobile h2.tagline {
     font-size: .8em;
   }
 
-  /* line 246, style.scss */
+  /* line 254, style.scss */
   .page-content {
     padding: 0;
     margin: 0;
     padding: 0 1em;
   }
 
-  /* line 250, style.scss */
+  /* line 258, style.scss */
   .rockwall-desktop {
     display: none;
   }
 }
 /* desktop: */
 @media only screen and (min-width: 768px) {
-  /* line 254, style.scss */
+  /* line 262, style.scss */
   .desktophide {
     display: none;
   }
 
-  /* line 257, style.scss */
+  /* line 265, style.scss */
   .rockwall-mobile {
     display: none;
   }
 
-  /* line 260, style.scss */
+  /* line 268, style.scss */
   .rockwall-desktop {
     position: fixed;
     width: 33%;
@@ -3786,40 +3795,49 @@ h1.page-title {
     -o-background-size: cover;
     background-size: cover;
   }
+  /* line 279, style.scss */
+  .rockwall-desktop #contact {
+    background-color: white;
+    padding: 5%;
+    width: 95%;
+    margin: 20px 0 0 0;
+    font-size: 1em;
+    border-top: thick solid #f05827;
+  }
 
-  /* line 271, style.scss */
+  /* line 288, style.scss */
   .logo-desktop {
     padding: .5em 1em 5px 0em;
     border-top: thick solid #f05827;
   }
-  /* line 274, style.scss */
+  /* line 291, style.scss */
   .logo-desktop .logo-img {
     padding-top: 0px;
     max-height: 100%;
   }
-  /* line 278, style.scss */
+  /* line 295, style.scss */
   .logo-desktop .tagline {
     font-size: 1em;
   }
 
-  /* line 282, style.scss */
+  /* line 299, style.scss */
   .nav-desktop {
     margin-top: .5em;
   }
 
-  /* line 285, style.scss */
+  /* line 302, style.scss */
   #navcontainer ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
   }
-  /* line 289, style.scss */
+  /* line 306, style.scss */
   #navcontainer ul li {
     margin: 0 0 .2em 0;
     text-align: left;
   }
 
-  /* line 294, style.scss */
+  /* line 311, style.scss */
   #navcontainer a {
     display: block;
     color: #1b75bb;
@@ -3833,14 +3851,14 @@ h1.page-title {
     transition: .7s ease-in-out;
   }
 
-  /* line 303, style.scss */
+  /* line 320, style.scss */
   #navcontainer a:hover, #navcontainer a:active {
     background-color: #f05827;
     color: white;
     margin-left: 10%;
   }
 
-  /* line 308, style.scss */
+  /* line 325, style.scss */
   .page-content {
     float: left;
     width: 66%;
@@ -3850,21 +3868,21 @@ h1.page-title {
     background-color: white;
     color: #404041;
   }
-  /* line 316, style.scss */
+  /* line 334, style.scss */
   .page-content h1.page-title {
     background-color: #1b75bb;
     background-image: url("img/bluegreenorange.gif");
     color: white;
     font-size: 2em;
   }
-  /* line 322, style.scss */
+  /* line 340, style.scss */
   .page-content .orange, .page-content .blue, .page-content .green {
     margin: 0;
     padding: 5%;
   }
 }
 @media only screen and (min-width: 1024px) {
-  /* line 331, style.scss */
+  /* line 349, style.scss */
   .rockwall-desktop {
     position: fixed;
     width: 30%;
@@ -3872,22 +3890,22 @@ h1.page-title {
     float: left;
   }
 
-  /* line 337, style.scss */
+  /* line 355, style.scss */
   .page-content {
     float: left;
-    width: 60%;
+    width: 66%;
     margin-left: 33%;
   }
-  /* line 341, style.scss */
+  /* line 359, style.scss */
   .page-content p {
     max-width: 90%;
   }
-  /* line 344, style.scss */
+  /* line 362, style.scss */
   .page-content .orange, .page-content .blue, .page-content .green {
     margin: 0;
     padding: 5%;
   }
-  /* line 347, style.scss */
+  /* line 365, style.scss */
   .page-content .orange p, .page-content .blue p, .page-content .green p {
     max-width: 100%;
   }
@@ -3895,21 +3913,21 @@ h1.page-title {
 /*------------------------------------*\
     MISC
 \*------------------------------------*/
-/* line 368, style.scss */
+/* line 386, style.scss */
 ::selection {
   background: #1b75bb;
   color: #FFF;
   text-shadow: none;
 }
 
-/* line 373, style.scss */
+/* line 391, style.scss */
 ::-webkit-selection {
   background: #1b75bb;
   color: #FFF;
   text-shadow: none;
 }
 
-/* line 378, style.scss */
+/* line 396, style.scss */
 ::-moz-selection {
   background: #blue;
   color: #FFF;
@@ -3919,55 +3937,55 @@ h1.page-title {
 /*------------------------------------*\
     WORDPRESS CORE
 \*------------------------------------*/
-/* line 388, style.scss */
+/* line 406, style.scss */
 .alignnone {
   margin: 5px 20px 20px 0;
 }
 
-/* line 392, style.scss */
+/* line 410, style.scss */
 .aligncenter,
 div.aligncenter {
   display: block;
   margin: 5px auto 5px auto;
 }
 
-/* line 396, style.scss */
+/* line 414, style.scss */
 .alignright {
   float: right;
   margin: 5px 0 20px 20px;
 }
 
-/* line 400, style.scss */
+/* line 418, style.scss */
 .alignleft {
   float: left;
   margin: 5px 20px 20px 0;
 }
 
-/* line 404, style.scss */
+/* line 422, style.scss */
 a img.alignright {
   float: right;
   margin: 5px 0 20px 20px;
 }
 
-/* line 408, style.scss */
+/* line 426, style.scss */
 a img.alignnone {
   margin: 5px 20px 20px 0;
 }
 
-/* line 411, style.scss */
+/* line 429, style.scss */
 a img.alignleft {
   float: left;
   margin: 5px 20px 20px 0;
 }
 
-/* line 415, style.scss */
+/* line 433, style.scss */
 a img.aligncenter {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 420, style.scss */
+/* line 438, style.scss */
 .wp-caption {
   background: #FFF;
   border: 1px solid #F0F0F0;
@@ -3976,22 +3994,22 @@ a img.aligncenter {
   text-align: center;
 }
 
-/* line 427, style.scss */
+/* line 445, style.scss */
 .wp-caption.alignnone {
   margin: 5px 20px 20px 0;
 }
 
-/* line 430, style.scss */
+/* line 448, style.scss */
 .wp-caption.alignleft {
   margin: 5px 20px 20px 0;
 }
 
-/* line 433, style.scss */
+/* line 451, style.scss */
 .wp-caption.alignright {
   margin: 5px 0 20px 20px;
 }
 
-/* line 436, style.scss */
+/* line 454, style.scss */
 .wp-caption img {
   border: 0 none;
   height: auto;
@@ -4001,7 +4019,7 @@ a img.aligncenter {
   width: auto;
 }
 
-/* line 445, style.scss */
+/* line 463, style.scss */
 .wp-caption .wp-caption-text,
 .gallery-caption {
   font-size: 11px;
@@ -4014,7 +4032,7 @@ a img.aligncenter {
     PRINT
 \*------------------------------------*/
 @media print {
-  /* line 463, style.scss */
+  /* line 481, style.scss */
   * {
     background: transparent !important;
     color: #000 !important;
@@ -4022,46 +4040,46 @@ a img.aligncenter {
     text-shadow: none !important;
   }
 
-  /* line 470, style.scss */
+  /* line 488, style.scss */
   a,
   a:visited {
     text-decoration: underline;
   }
 
-  /* line 473, style.scss */
+  /* line 491, style.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 476, style.scss */
+  /* line 494, style.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
 
-  /* line 481, style.scss */
+  /* line 499, style.scss */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: "";
   }
 
-  /* line 484, style.scss */
+  /* line 502, style.scss */
   pre, blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-  /* line 488, style.scss */
+  /* line 506, style.scss */
   thead {
     display: table-header-group;
   }
 
-  /* line 491, style.scss */
+  /* line 509, style.scss */
   tr, img {
     page-break-inside: avoid;
   }
 
-  /* line 494, style.scss */
+  /* line 512, style.scss */
   img {
     max-width: 100% !important;
   }
@@ -4070,7 +4088,7 @@ a img.aligncenter {
     margin: 0.5cm;
 }
 
-  /* line 502, style.scss */
+  /* line 520, style.scss */
   p,
   h2,
   h3 {
@@ -4078,7 +4096,7 @@ a img.aligncenter {
     widows: 3;
   }
 
-  /* line 507, style.scss */
+  /* line 525, style.scss */
   h2,
   h3 {
     page-break-after: avoid;
